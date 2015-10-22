@@ -18,6 +18,8 @@
 		5323E6B60EAFCA7E003A9687 /* QTKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5323E6B50EAFCA7E003A9687 /* QTKit.framework */; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
 		90E93612F9A24F66998E8BF9 /* ocvFaceDetectApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 81BE9FE22E5849EBAB5CFCDD /* ocvFaceDetectApp.cpp */; };
+		9C64C6301BD921D0000193D7 /* IOSurface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C64C62F1BD921D0000193D7 /* IOSurface.framework */; };
+		9C64C6321BD921D6000193D7 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C64C6311BD921D6000193D7 /* IOKit.framework */; };
 		F6AC4E7D7D724F208F9548CB /* CinderApp.icns in Resources */ = {isa = PBXBuildFile; fileRef = C20E115C611843D79334B46D /* CinderApp.icns */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +40,8 @@
 		5323E6B50EAFCA7E003A9687 /* QTKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QTKit.framework; path = /System/Library/Frameworks/QTKit.framework; sourceTree = "<absolute>"; };
 		81BE9FE22E5849EBAB5CFCDD /* ocvFaceDetectApp.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; name = ocvFaceDetectApp.cpp; path = ../src/ocvFaceDetectApp.cpp; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* ocvFaceDetect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ocvFaceDetect.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C64C62F1BD921D0000193D7 /* IOSurface.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOSurface.framework; path = System/Library/Frameworks/IOSurface.framework; sourceTree = SDKROOT; };
+		9C64C6311BD921D6000193D7 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
 		9CC5F5A837AC47C8B3DB2B53 /* ocvFaceDetect_Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = "\"\""; path = ocvFaceDetect_Prefix.pch; sourceTree = "<group>"; };
 		B0FE2BF2BD174BC7B14D6D5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C20E115C611843D79334B46D /* CinderApp.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = CinderApp.icns; path = ../resources/CinderApp.icns; sourceTree = "<group>"; };
@@ -48,6 +52,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C64C6321BD921D6000193D7 /* IOKit.framework in Frameworks */,
+				9C64C6301BD921D0000193D7 /* IOSurface.framework in Frameworks */,
 				00FFAEBE19D4FB040002CA8E /* AVFoundation.framework in Frameworks */,
 				00FFAEBF19D4FB040002CA8E /* CoreMedia.framework in Frameworks */,
 				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
@@ -154,6 +160,8 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9C64C6311BD921D6000193D7 /* IOKit.framework */,
+				9C64C62F1BD921D0000193D7 /* IOSurface.framework */,
 				00FFAEBC19D4FB040002CA8E /* AVFoundation.framework */,
 				00FFAEBD19D4FB040002CA8E /* CoreMedia.framework */,
 				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
@@ -332,7 +340,7 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = "\"$(CINDER_PATH)/boost\"";
+				HEADER_SEARCH_PATHS = "\"$(CINDER_PATH)/include\"";
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
@@ -349,7 +357,7 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = "\"$(CINDER_PATH)/boost\"";
+				HEADER_SEARCH_PATHS = "\"$(CINDER_PATH)/include\"";
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				SDKROOT = macosx;
 				USER_HEADER_SEARCH_PATHS = "\"$(CINDER_PATH)/include\" ../include ../../../include ../../../include/opencv2";
